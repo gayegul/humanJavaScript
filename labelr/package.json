@@ -1,13 +1,14 @@
 {
   "name": "labelr",
   "version": "1.0.0",
-  "description": "A really awesome way to manage labels for github issues",
+  "description": "A really awesome way to manage labels for github issues.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "prebuild": "rm -rf public && mkdir build",
+    "prebuild": "rm -rf public && mkdir public",
     "build": "NODE_ENV=production webpack",
-    "deploy": "surge -p public -d labelrg.surge.sh"
+    "deploy": "surge -p public -d envious-office.surge.sh",
+    "yolo": "npm run build && npm run deploy"
   },
   "author": "",
   "license": "MIT",
